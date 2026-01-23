@@ -1,0 +1,87 @@
+{
+  "version": "2.0",
+  "project": {
+    "name": "WebApp1_UI",
+    "type": "ui",
+    "description": "React/TypeScript UI application for WebApp1"
+  },
+  "templates": {
+    "repository": "https://github.com/reyesmelvinr-emr/core-akr-templates.git",
+    "branch": "master",
+    "local_path": "~/.akr/templates"
+  },
+  "documentation": {
+    "output_path": "docs/",
+    "default_template": "ui-component"
+  },
+  "component_mappings": [
+    {
+      "source_pattern": "src/components/**/*.tsx",
+      "doc_path": "docs/components/",
+      "template": "ui-component",
+      "team_template_extension": "team/ui-component-webapp1.md"
+    },
+    {
+      "source_pattern": "src/pages/**/*.tsx",
+      "doc_path": "docs/pages/",
+      "template": "ui-component",
+      "team_template_extension": "team/ui-component-webapp1.md"
+    },
+    {
+      "source_pattern": "src/context/**/*.tsx",
+      "doc_path": "docs/context/",
+      "template": "ui-component"
+    },
+    {
+      "source_pattern": "src/hooks/**/*.ts",
+      "doc_path": "docs/hooks/",
+      "template": "ui-component"
+    },
+    {
+      "source_pattern": "src/services/**/*.ts",
+      "doc_path": "docs/services/",
+      "template": "service-standard"
+    },
+    {
+      "source_pattern": "src/utils/**/*.ts",
+      "doc_path": "docs/utils/",
+      "template": "service-lean"
+    },
+    {
+      "source_pattern": "src/mocks/**/*.ts",
+      "doc_path": "docs/mocks/",
+      "template": "service-lean"
+    }
+  ],
+  "team": {
+    "name": "Frontend Team",
+    "roles": {
+      "tech-lead": ["melvin.reyes@emerson.com"],
+      "developer": ["bob@emerson.com", "charlie@emerson.com"],
+      "product-owner": ["dana@emerson.com"],
+      "qa": ["eve@emerson.com"]
+    }
+  },
+  "tags": {
+    "enabled": true,
+    "categories": [
+      "feature",
+      "component-type",
+      "technology",
+      "business-domain"
+    ],
+    "auto_generate": true
+  },
+  "validation": {
+    "required_sections": true,
+    "transparency_markers": true,
+    "completeness_threshold": 70,
+    "vale_linting": true
+  },
+  "inheritance": {
+    "enabled": true,
+    "base_templates_path": ".akr/templates/",
+    "team_templates_path": ".akr/templates/team/",
+    "merge_strategy": "extend"
+  }
+}
