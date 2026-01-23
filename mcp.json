@@ -1,0 +1,16 @@
+{
+    "servers": {
+        "akr-documentation-server": {
+            "type": "stdio",
+            "command": "python",
+            "args": [
+                "c:\\Users\\E1481541\\OneDrive - Emerson\\Documents\\CDS - Team Hawkeye\\AKR with MCP\\akr-mcp-server\\src\\server.py"
+            ],
+            "env": {
+                "PYTHONPATH": "c:\\Users\\E1481541\\OneDrive - Emerson\\Documents\\CDS - Team Hawkeye\\AKR with MCP\\akr-mcp-server\\src",
+                "VSCODE_WORKSPACE_FOLDER": "c:\\Users\\E1481541\\OneDrive - Emerson\\Documents\\CDS - Team Hawkeye\\Training Test Workspace",
+                "AKR_TEMPLATES_DIR": "c:\\Users\\E1481541\\OneDrive - Emerson\\Documents\\CDS - Team Hawkeye\\AKR with MCP\\core-akr-templates"
+            }
+        }
+    }
+}
