@@ -1,0 +1,7 @@
+
+# BEGIN AKR GOVERNANCE
+.github/pull_request_template/ @org/standards-team
+validation/vale-rules/ @org/standards-team
+validation/.vale.ini @org/standards-team
+.akr/ @org/standards-team
+# END AKR GOVERNANCE

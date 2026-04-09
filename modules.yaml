@@ -1,0 +1,102 @@
+project:
+  name: TrainingTracker.UI
+  layer: UI
+  standards_version: v1.1.0
+  minimum_standards_version: v1.0.0
+  compliance_mode: pilot
+
+modules:
+  - name: DashboardPage
+    grouping_status: approved
+    doc_output: docs/modules/DashboardPage_doc.md
+    files:
+      - src/pages/Dashboard.tsx
+      - src/components/common/Layout.tsx
+      - src/components/common/Table.tsx
+      - src/components/common/StatusBadge.tsx
+      - src/components/common/Card.tsx
+      - src/components/common/Button.tsx
+
+  - name: CourseCatalogPage
+    grouping_status: approved
+    doc_output: docs/modules/CourseCatalogPage_doc.md
+    files:
+      - src/pages/CourseCatalog.tsx
+      - src/hooks/useCourses.ts
+      - src/services/apiClient.ts
+      - src/mocks/courses.ts
+      - src/components/common/Layout.tsx
+      - src/components/common/Table.tsx
+      - src/components/common/StatusBadge.tsx
+      - src/components/common/Card.tsx
+      - src/components/common/Button.tsx
+
+  - name: UsersPage
+    grouping_status: approved
+    doc_output: docs/modules/UsersPage_doc.md
+    files:
+      - src/pages/Users.tsx
+      - src/hooks/useUsers.ts
+      - src/components/common/Layout.tsx
+      - src/components/common/Table.tsx
+      - src/components/common/StatusBadge.tsx
+      - src/components/common/Card.tsx
+      - src/components/common/Button.tsx
+
+  - name: EnrollmentsPage
+    grouping_status: approved
+    doc_output: docs/modules/EnrollmentsPage_doc.md
+    files:
+      - src/pages/Enrollments.tsx
+      - src/hooks/useEnrollments.ts
+      - src/components/common/Layout.tsx
+      - src/components/common/Table.tsx
+      - src/components/common/StatusBadge.tsx
+      - src/components/common/Card.tsx
+      - src/components/common/Button.tsx
+
+  - name: AdminPage
+    grouping_status: approved
+    doc_output: docs/modules/AdminPage_doc.md
+    files:
+      - src/pages/AdminPanel.tsx
+      - src/hooks/useAdmin.ts
+      - src/services/adminService.ts
+      - src/components/common/Layout.tsx
+      - src/components/common/Card.tsx
+      - src/components/common/Button.tsx
+
+  - name: AppShell
+    grouping_status: draft
+    doc_output: docs/modules/AppShell_doc.md
+    files:
+      - src/main.tsx
+      - src/pages/App.tsx
+      - src/pages/NotFound.tsx
+      - src/context/AuthContext.tsx
+      - src/services/api.ts
+
+  - name: CommonComponents
+    grouping_status: draft
+    doc_output: docs/modules/CommonComponents_doc.md
+    files:
+      - src/components/common/Layout.tsx
+      - src/components/common/Button.tsx
+      - src/components/common/Card.tsx
+      - src/components/common/StatusBadge.tsx
+      - src/components/common/Table.tsx
+
+  - name: SharedUtilities
+    grouping_status: draft
+    doc_output: docs/modules/SharedUtilities_doc.md
+    files:
+      - src/utils/dateFormatter.ts
+      - src/utils/validators.ts
+
+database_objects: []
+
+unassigned:
+  - path: src/global.d.ts
+    reason: TypeScript global declaration; no domain behavior
+  - path: src/vite-env.d.ts
+    reason: Vite environment type declaration; no domain behavior
