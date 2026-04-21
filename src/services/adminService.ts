@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5115/api';
+const rawApiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5115';
+const apiHostBaseUrl = rawApiBaseUrl.replace(/\/+$/, '').replace(/\/api$/i, '');
+const API_BASE_URL = `${apiHostBaseUrl}/api`;
 
 export interface StatisticsData {
   totalUsers: number;

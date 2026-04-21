@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const baseURL = import.meta.env.VITE_API_BASE_URL as string;
+const rawBaseURL = (import.meta.env.VITE_API_BASE_URL as string | undefined) || 'http://localhost:5115';
+const baseURL = rawBaseURL.replace(/\/+$/, '').replace(/\/api$/i, '');
 const useMocks = import.meta.env.VITE_USE_API_MOCKS === 'true';
 
 export const api = axios.create({ baseURL });

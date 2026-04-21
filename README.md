@@ -12,8 +12,8 @@ Vite + React + TypeScript implementation for the Employee Training & Certificati
 ## Environment Variables
 | Name | Description | Default |
 |------|-------------|---------|
-| VITE_API_BASE_URL | Base URL of API | http://localhost:5005/api |
-| VITE_USE_API_MOCKS | Toggle mock layer | true |
+| VITE_API_BASE_URL | Base URL of API | http://localhost:5115 |
+| VITE_USE_API_MOCKS | Toggle mock layer | false |
 
 ## Mocks
 When `VITE_USE_API_MOCKS=true`, service helpers return static responses (expand later with fixtures) instead of calling the API.
